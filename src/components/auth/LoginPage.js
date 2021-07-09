@@ -6,9 +6,22 @@ export const LoginPage = () => {
     <>
       <h3 className="auth__title">Login</h3>
       <form>
-        <input type="text" placeholder="email" name="email" className="auth__input" autocomplete="off"/>
-        <input type="password" placeholder="password" name="password" className="auth__input"/>
-        <button type="submit" className="btn btn-primary btn-block">Login</button>
+        <input
+          type="text"
+          placeholder="email"
+          name="email"
+          className="auth__input"
+          autocomplete="off"
+        />
+        <input
+          type="password"
+          placeholder="password"
+          name="password"
+          className="auth__input"
+        />
+        <button type="submit" className="btn btn-primary btn-block">
+          Login
+        </button>
         <div className="auth__social-network">
           <p>Login with social network</p>
           <div className="google-btn">
@@ -24,7 +37,9 @@ export const LoginPage = () => {
             </p>
           </div>
         </div>
-        <Link to="/auth/register" className="link">Create new account</Link> 
+        <Link to="/auth/register" className="link">
+          Create new account
+        </Link>
       </form>
     </>
   );
